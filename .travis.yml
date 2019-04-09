@@ -17,8 +17,7 @@ install:
 
 script:
   - yarn lint
-  - yarn build --base-href /pwa/
-  - mv dist/pwa/index.html dist/pwa/404.html
+  - yarn build --base-href https://arechiga13.github.io/pwa/
 deploy:
   provider: pages
   skip_cleanup: true
