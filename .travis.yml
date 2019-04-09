@@ -17,12 +17,12 @@ install:
 
 script:
   - yarn lint
-  - yarn build --base-href /my-awesome-project/
-  - mv dist/my-awesome-project/index.html dist/my-awesome-project/404.html
+  - yarn build --base-href /pwa/
+  - mv dist/pwa/index.html dist/pwa/404.html
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: 5afca5fbeadd30e656c69ced4138718bb54af5b4
-  local_dir: dist/my-awesome-project
+  local_dir: dist/pwa
   on:
     branch: master.
