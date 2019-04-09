@@ -1,0 +1,4 @@
+<h1>My Post</h1> 
+<button *ngIf="Pwa.promptEvent" (click)="installPwa()">Install</button>
+<!-- <button (click)="installPwa()">Install</button> -->
+<app-post *ngFor="let post of posts" [content]="post.body" [title]="post.title"></app-post>
