@@ -22,7 +22,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: 5afca5fbeadd30e656c69ced4138718bb54af5b4
+  github_token: $GITHUB_TOKEN
   local_dir: dist/pwa
   on:
     branch: master.
