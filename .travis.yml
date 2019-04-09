@@ -13,11 +13,11 @@ cache:
     - node_modules
 
 install:
-  - npm install -g yarn
+  - npm install
 
 script:
-  - yarn lint
-  - yarn build --base-href https://arechiga13.github.io/pwa/
+  - ng lint
+  - ng build --base-href https://arechiga13.github.io/pwa/
 deploy:
   provider: pages
   skip_cleanup: true
