@@ -13,10 +13,11 @@ before_script:
 
 script:
   - ng build --prod --base-href https://arechiga13.github.io/pwa/
+
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/pwa
+  local_dir: dist/angular-pwa
   on:
     branch: master.
